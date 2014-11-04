@@ -1,0 +1,58 @@
+#nav-section
+{
+	background-color: #000;
+	z-index: 1000;
+}
+
+
+.nav
+{
+	position: relative;
+	list-style: none;
+	display: block;
+	text-align: right;
+}
+
+.nav ul
+{
+	display: inline-block;
+	margin: 0;
+	padding-right: 100px;
+}
+
+.nav ul li{
+	display: block;
+	vertical-align: middle;
+	float: left;
+	padding: 10px;
+}
+
+.nav ul li a:hover{
+	color: #808080;
+}
+
+.nav ul li a{
+	text-decoration: none;
+	color: #c0c0c0;
+	transition: color 0.3s ease-in-out;
+	-webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out;
+}
+
+
+#video
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: auto;
+	min-width: 100%;
+	display: block;
+	min-height: 100%;
+	height: auto;
+	background-position-x: 0;
+	background-position-y: 0;
+	overflow: hidden;
+	z-index: -1000;
+
+}
