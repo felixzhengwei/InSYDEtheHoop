@@ -1,37 +1,75 @@
+html body
+{
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
 .navbar-default{
-	background: none;
+	background-color: #000;
 	border-radius: 0;
 	-webkit-border-radius:0;
 	-moz-border-radius:0;
 	border-color: #000;
+	margin-bottom: 0;
 }
 
 .navbar-default .navbar-nav > li > a{
-	color: #fff;
+	color: #808080;
 	transition: color 0.3s ease-in-out;
 	-webkit-transition: color 0.3s ease-in-out;
 	-moz-transition: color 0.3s ease-in-out;
 
 }
 
-.navbar-default .navbar-nav > a:hover
-{
-	background-color: #808080;
+.navbar-default .navbar-nav > li{
+	transition: background-color 0.5s ease-in-out;
+	-webkit-transition: background-color 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out;
 }
 
-#video
+
+.navbar-default .navbar-nav > li > a:hover{
+	color: #fff;
+}
+
+.navbar-default .navbar-brand
 {
-	position: absolute;
+	color: #808080;
+	font-family: 'Parisienne', cursive;
+	transition: color 0.3s ease-in-out;
+	-webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out;
+}
+
+.navbar-default .navbar-brand:hover{
+	color: #fff;
+}
+
+#video-NBA{
+	background-image: url("../../pics/dots.png");
+	background-repeat: repeat;
+	z-index:0;
+}
+
+#video-NBA .container-fluid{
+	padding:0;
+}
+
+#nbavid{
+	position: relative;
+	margin:0;
+	padding:0;
 	right: 0;
 	top: 0;
-	width: auto;
 	min-width: 100%;
 	display: block;
-	min-height: 100%;
+	width: auto;
 	height: auto;
-	background-position-x: 0;
-	background-position-y: 0;
-	overflow: hidden;
-	z-index: -1000;
+	z-index: -1;
 }
 
+.test{
+
+	height: 30px;
+	background-color: blue;
+}
