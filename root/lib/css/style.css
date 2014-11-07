@@ -1,7 +1,12 @@
-html body
-{
-	max-width: 100%;
-    overflow-x: hidden;
+#nbavid{
+	position: absolute;
+	z-index: -1;
+	min-width: 100%;
+}
+
+h1{
+	margin:0;
+	padding:0;
 }
 
 .navbar-default{
@@ -34,42 +39,19 @@ html body
 
 .navbar-default .navbar-brand
 {
-	color: #808080;
-	font-family: 'Parisienne', cursive;
-	transition: color 0.3s ease-in-out;
-	-webkit-transition: color 0.3s ease-in-out;
-	-moz-transition: color 0.3s ease-in-out;
+	margin:0;
+	padding:0;
 }
 
 .navbar-default .navbar-brand:hover{
 	color: #fff;
 }
 
-#video-NBA{
-	background-image: url("../../pics/dots.png");
-	background-repeat: repeat;
-	z-index:0;
+#video{
+	background-image: url("../pics/dots.png");
 }
 
-#video-NBA .container-fluid{
-	padding:0;
-}
 
-#nbavid{
-	position: relative;
-	margin:0;
-	padding:0;
-	right: 0;
-	top: 0;
-	min-width: 100%;
-	display: block;
-	width: auto;
-	height: auto;
-	z-index: -1;
-}
-
-.test{
-
-	height: 30px;
-	background-color: blue;
+#bigtext{
+	vertical-align: middle;
 }

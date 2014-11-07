@@ -32,12 +32,16 @@ $(function()
 		$("#nbavid").height(scaledVideoHeight);
 		$("#nbavid").width(scaledVideoWidth);
 		
-		if (window.jQuery) {  
-    alert("good");
-} else {
-    alert("bad");
-}
+		console.log(scaledVideoHeight);
 
+		$("#video").height(scaledVideoHeight);
+
+		//scale the logo's height
 	}
+
+	var navheight = $("#logobrand").height();
+		$("#logo").height(navheight);
+	var divheight = $("#nbavid")[0].videoHeight;
+		$("#bigtext").height(divheight);
 });
 
