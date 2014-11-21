@@ -19,7 +19,7 @@
 					      	<span class="icon-bar"></span>
 					      </button>
 					      <a id="logobrand" class="own navbar-brand" href="#">
-					      	<img id="logo" src="lib/pics/logo.jpg"></a>
+					      	<img id="logo" src="lib/pics/wlogo.jpg"></a>
 					    </div>
 
 					    <div class="navbar-collapse collapse">
@@ -31,28 +31,97 @@
 				  	</div>
 				</nav>
 		</section>
+
 			<section id="video">
-				<video id="nbavid" autoplay="autoplay" muted>
+				<video id="nbavid" autoplay loop="on" muted>
 					<source src="lib/video/NBA.mp4" type="video/mp4"></source>
 					<source src="lib/video/NBA.webm" type="video/webm"></source>
 					<source src="lib/video/NBA.ogv" type="video/ogv"></source>
 				</video>
-				<div id="bigtext" class="container-fluid">
-					<h1>Shoot Inside the Hoop</h1>
+				<div id="bigtext" class="container">
+					<div class="col-xs-12">
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<p id="how">How to shoot inside the hoop</p>
+						<br></br>
+						<p id="find">It's time to find out...</p>
+					</div>
 					
 				</div>
 			</section>
-				<div class="test container-fluid">
-					<h1>Hello</h1>
-					<h1>Hello</h1>
-					<h1>Hello</h1>
-					<h1>Hello</h1>
+
+			
+			<section id="spurspump">
+				<div class="video container-fluid">
+					<br></br>
+					<p id="little">Here is a little something to get you <button id="expand">pumped up</button> !</p>
+					<br></br>
+					<div class="vidrow row">
+						<div class="videofiller col-md-3 col-lg-3">
+						</div>
+						<div class="spurs col-md-6 col-lg-6">
+							<iframe title="YouTube video player" id="pump" type="text/html" src="https://www.youtube.com/embed/T3y7cWmoBCI" frameborder="0"></iframe>
+							<br></br>
+						</div>
+						<div class="videofiller col-md-3 col-lg-3">
+						</div>
+					</div>
 				</div>
-		
+			</section>
+			<div class="cd-fixed-bg cd-bg-1">
+        		<p id="imagequestion">Where on the court do you belong?</p>
+        
+
+    		</div> 
+
+			<section id="quizsec">
+				<div class="container">
+					<div class="row">
+						<div class="question-wrap col-xs-12">
+							<br></br>
+							<p id="know">Don't Know what position you are playing? Take a little quiz to find out!</p>
+
+							<button id="quiz">Quiz</button>
+							<div class="questionbox col-xs-12">
+								<div class="questionfiller col-xs-4"></div>
+								<div class="questionmiddle col-xs-4">
+			                        <div class="spanquestion col-xs-12">
+			    						<ul id="questionlist">
+			                            </ul>
+			                        </div>
+								</div>
+								<div class="questionfiller col-xs-4"></div>
+							</div>
+						</div>
+						<div class="positioning container">
+							<div class="row first">
+					            <div class="pos col-xs-12"></div>
+					        </div>
+					        <div class="row second">
+					            <div class="postwo col-xs-12"></div>
+					        </div>
+				    		</div>
+			    		</div>
+					</div>
+
+					
+				</div>
+
+				
+			</section>
+			
+			
 		<footer>
-			<script src="lib/scripts/js/jquery-1.11.1.min.js"></script>
-			<script src="lib/scripts/js/bootstrap.min.js"></script>
-			<script src="lib/scripts/javascript.js"></script> 
+			<script src="lib/scripts/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+			<script src="lib/scripts/js/bootstrap.min.js" type="text/javascript"></script>
+			<script src="lib/scripts/javascript.js" type="text/javascript"></script> 
+			<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> 
 	</footer>
+	<?php
+    	header('X-Frame-Options: GOFORIT'); 
+	?>
 	</body>
 </html>

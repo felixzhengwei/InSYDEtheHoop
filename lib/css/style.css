@@ -1,16 +1,20 @@
+html body{
+	max-width: 100%;
+    overflow-x: hidden;
+    z-index: 0;
+   /*font-family: "Roboto", sans-serif;*/
+    /*font-family: "Comic Sans MS", cursive, sans-serif,sans-serif;*/
+   font-family: 'Poiret One', cursive;
+}
+
 #nbavid{
 	position: absolute;
 	z-index: -1;
 	min-width: 100%;
 }
 
-h1{
-	margin:0;
-	padding:0;
-}
-
 .navbar-default{
-	background-color: #000;
+	background-color: #fff;
 	border-radius: 0;
 	-webkit-border-radius:0;
 	-moz-border-radius:0;
@@ -19,6 +23,9 @@ h1{
 }
 
 .navbar-default .navbar-nav > li > a{
+	font-weight: 600;
+	/*font-family: Arial black, Geneva, sans-serif;*/
+	/*font-family: "Roboto", sans-serif;*/
 	color: #808080;
 	transition: color 0.3s ease-in-out;
 	-webkit-transition: color 0.3s ease-in-out;
@@ -48,10 +55,335 @@ h1{
 }
 
 #video{
-	background-image: url("../pics/dots.png");
+	background-image: url("../pics/vertical.png");
+
+}
+
+#bigtext .col-xs-12
+{
+	/*font-family: Arial black, Geneva, sans-serif;*/
+	/*font-family: "Roboto", sans-serif;*/
+	color: #a8a2a2;
+	text-align: center;
+	
 }
 
 
-#bigtext{
+#spurspump{
+	background-color: #f4efef;
+	display:none;
+	overflow:auto;
+}
+
+#little{
+	opacity: 0;
+}
+
+/*#spurspump h1{
+	padding: 20px;
+	margin:20px;
+}*/
+
+.spurs
+{
+	padding: 0;
+}
+
+.video{
+	text-align: center;
+}
+
+/*.video h1{
+	/*font-family:Copperplate, 'Copperplate Gothic Light', fantasy;*/
+	/*font-family: "Roboto", sans-serif;*/
+	/*color: #fff;
+}*/
+
+
+#expand{
+	text-align: center;
+	text-decoration: none;
+	background-color: #000;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	color: #808080;
+}
+
+.vidrow{
+	display:none;
+}
+
+#quizsec{
+	display:none;
+	background-color:#f4efef;
+
+	
+}
+
+.question-wrap{
+	text-align: center;
+	color:#000;
+}
+
+#quiz{
+	margin: 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	background-color: #fea905;
+	/*font-family: "Roboto", sans-serif;*/
+	font-size: 120%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right:25px;
+	outline: none;
+	border:none;
+	color: #fff;
+	transition: background-color 0.3s ease-in-out;
+	-webkit-transition: background-color 0.3s ease-in-out;
+	-moz-transition: background-color 0.3s ease-in-out;
+
+}
+
+#quiz:hover{
+	background-color:#c28103;
+}
+
+.questionbox{
+ 	display:none;
+ 	padding:0;
+	text-align: center;
+}
+
+.questionbox li{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-o-border-radius:5px;
+	text-align: left;
+	background-color: #454549;
+	margin: 2px;
+	text-align: center;
+	color:#fff;
+	background-image: url("../pics/wood2.jpg");
+	z-index: 2;
+}
+
+.questionbox li:hover{
+	-moz-transform:rotate(-5deg); -moz-box-shadow:10px 10px 20px #000000;
+  -webkit-transform:rotate(-5deg); -webkit-box-shadow:10px 10px 20px #000000;
+  transform:rotate(-5deg); box-shadow:10px 10px 20px #000000; 
+}
+
+.questionbox p{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-o-border-radius:5px;
+	/*background-color: orange;*/
+	/*font-family: Arial black, Geneva, sans-serif;*/
+	background-image: url("../pics/wood.jpg");
+	/*font-family: "Roboto", sans-serif;*/
+	color:#fff;
+	font-size: 220%;
+}
+
+.questionbox ul{
+	text-align: center;
+	padding:0;
+	list-style: none;
+	
+}
+
+.spanquestion{
+	padding: 15px;
+}
+
+#questionlist button{
+	text-decoration: none;
+	background-color: #454549;
+	background-image: url("../pics/wood2.jpg");
+	border: none;
+	outline:none;
+	color: #fff;
+}
+
+#questionlist button:active{
+	text-decoration: none;
+	background-color: #454549;
+	border: none;
+	outline:none;
+	color: #fff;
+}
+
+#questionlist button:focus{
+	text-decoration: none;
+	background-color: #454549;
+	border: none;
+	outline:none;
+	color: #fff;
+	
+}
+
+.positioning{
+	display:none;
+
+}
+
+.positioning .first{
+	text-align: center;
+}
+
+.postwo{
+	
+	text-align:left;
+}
+
+.pos .congratz{
+	text-align: center;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+	color:#e5eacc;
+	text-align: center;
+	text-align: middle;
+	display:none;
 	vertical-align: middle;
+  	background-image: url("../pics/wball.png");
+  	background-size: cover;
+  	background-position: center center;
 }
+
+#imagequestion{
+	opacity:0;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+  	 #how{
+	    	font-size: 30px;
+	    }
+
+	   #find{
+	   	font-size: 30px;
+	   }
+
+	   #little{
+	   	font-size: 20px;
+	   }
+
+	   #imagequesiton{
+	   	font-size: 30px;
+	   }
+
+	   #know{
+	   	font-size: 15px;
+	   }
+
+	   #quiz{
+	   	font-size: 13px;
+	   }
+
+	   .youare{
+	   	font-size:10px;
+	   }
+
+	   .congratz{
+	   	font-size: 20px;
+	   	padding: 5px;
+	   }
+
+	   .questionbox li{
+	   	font-size:20px;
+	   }
+	   .questionbox p{
+	   	font-size:20px;
+	   }
+}
+
+@media screen and (min-width: 1000px) {
+	  #how{
+	    	font-size: 60px;
+	    }
+
+	   #find{
+	   	font-size: 60px;
+	   }
+
+	   #little{
+	   	font-size: 40px;
+	   }
+
+	   #imagequesiton{
+	   	font-size: 60px;
+	   }
+
+	   #know{
+	   	font-size: 30px;
+	   }
+
+	   #imagequestion{
+	   	font-size: 40px;
+	   }
+
+	   #quiz{
+	   	font-size: 20px;
+	   }
+
+	   .youare{
+	   	font-size:25px;
+	   }
+
+	   .congratz{
+	   	font-size: 35px;
+	   	padding: 15px;
+	   }
+
+	   .questionbox li{
+	   	font-size: 30px;
+	   }
+
+	   .questionbox p{
+	   	font-size:30px;
+	   }
+}
+
+@media screen and (max-width: 1060px) {
+	 .questionfiller{
+	 	display:none;
+	 }
+
+	 .questionmiddle{
+	 	width:100%;
+	 }
+
+}
+
+@media screen and (max-width: 700px) {
+	 .videofiller{
+	 	display:none;
+	 }
+
+	 #pump{
+	 	width:100%;
+	 }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
