@@ -56,6 +56,10 @@ html body{
 #logobrand:hover{
 	color: #000;
 }
+
+#logobrand{
+	opacity: 0;
+}
 .navbar-default .navbar-brand:hover{
 	color: #fff;
 }
@@ -134,7 +138,11 @@ html body{
 	color:#000;
 }
 
+#know{
+	opacity: 0;
+}
 #quiz{
+	opacity: 0;
 	margin: 10px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -154,6 +162,7 @@ html body{
 	-webkit-transition: background-color 0.3s ease-in-out;
 	-moz-transition: background-color 0.3s ease-in-out;
 
+
 }
 
 #quiz:hover{
@@ -166,36 +175,29 @@ html body{
 	text-align: center;
 }
 
-.questionbox li{
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-o-border-radius:5px;
-	text-align: left;
-	background-color: #454549;
-	margin: 2px;
+.questionbox li{	
+	margin: 5px;
 	text-align: center;
-	color:#fff;
-	background-image: url("../pics/wood2.jpg");
+	color:#000;
+	background-color:#f4efef;
 	z-index: 2;
+	border:solid 1px;
+	border-color:#000;
+	transition: background-color 1s ease-in-out;
+	-webkit-transition: background-color 1s ease-in-out;
+	-moz-transition: background-color 1s ease-in-out;
+	
 }
 
 .questionbox li:hover{
-	-moz-transform:rotate(-5deg); -moz-box-shadow:10px 10px 20px #000000;
-  -webkit-transform:rotate(-5deg); -webkit-box-shadow:10px 10px 20px #000000;
-  transform:rotate(-5deg); box-shadow:10px 10px 20px #000000; 
+	border-color:#808080;
+	background-color:#000;
+	color:#fff;
 }
 
 .questionbox p{
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-o-border-radius:5px;
-	/*background-color: orange;*/
-	/*font-family: Arial black, Geneva, sans-serif;*/
-	background-image: url("../pics/wood.jpg");
-	/*font-family: "Roboto", sans-serif;*/
-	color:#fff;
+	background-color:none;
+	color:#000;
 	font-size: 220%;
 }
 
@@ -211,9 +213,21 @@ html body{
 }
 
 #questionlist button{
+	width:100%;
 	text-decoration: none;
-	background-color: #454549;
-	background-image: url("../pics/wood2.jpg");
+	background-color: #f4efef;
+	border: none;
+	outline:none;
+	color: #000;
+	transition: background-color 0.5s, color 0.5s ease-in-out;
+	-webkit-transition: background-color 0.5s, color 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s, color 0.5s ease-in-out;
+}
+
+
+#questionlist button:hover{
+	text-decoration: none;
+	background-color: #000;
 	border: none;
 	outline:none;
 	color: #fff;
@@ -221,7 +235,7 @@ html body{
 
 #questionlist button:active{
 	text-decoration: none;
-	background-color: #454549;
+	background-color: #000;
 	border: none;
 	outline:none;
 	color: #fff;
@@ -229,7 +243,7 @@ html body{
 
 #questionlist button:focus{
 	text-decoration: none;
-	background-color: #454549;
+	background-color: #000;
 	border: none;
 	outline:none;
 	color: #fff;
@@ -269,6 +283,15 @@ html body{
 	opacity:0;
 }
 
+#tutorial{
+	display:none;
+}
+
+.contain{
+	background-color:#e4f8fa;
+	text-align: center;
+	border: solid #43edfc 1px;
+}
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
   	 #how{
@@ -357,6 +380,19 @@ html body{
 	   .questionbox p{
 	   	font-size:30px;
 	   }
+
+	   .second {
+	   	margin-top:8px;
+	   }
+
+	   .third{
+	   	margin-top:8px;
+	   }
+
+	   .tutvid a{
+	   	font-size:30px;
+	   }
+
 }
 
 @media screen and (max-width: 1060px) {
