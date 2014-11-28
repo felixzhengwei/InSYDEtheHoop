@@ -78,7 +78,9 @@ html body{
 	
 }
 
-
+.how{
+	opacity: 0;
+}
 #spurspump{
 	background-color: #f4efef;
 	display:none;
@@ -271,7 +273,6 @@ html body{
 .cd-fixed-bg.cd-bg-1 {
 	color:#e5eacc;
 	text-align: center;
-	text-align: middle;
 	display:none;
 	vertical-align: middle;
   	background-image: url("../pics/wball.png");
@@ -282,12 +283,15 @@ html body{
 .cd-fixed-bg.cd-bg-2 {
 	color:#e5eacc;
 	text-align: center;
-	text-align: middle;
 	display:none;
 	vertical-align: middle;
   	background-image: url("../pics/wball.png");
   	background-size: cover;
   	background-position: center center;
+}
+
+.tut{
+	text-align: center;
 }
 
 #imagequestion, #imagequestion2{
@@ -301,7 +305,7 @@ html body{
 .contain{
 	background-color:#e4f8fa;
 	text-align: center;
-	border: solid #43edfc 1px;
+	border:none;
 	margin:4px;
 }
 
@@ -315,32 +319,40 @@ html body{
 }
 
 .contain a{
+	border: solid #43edfc 1px;
 	text-decoration: none;
 	width:100%;
 	height:100%;
 	display:block;	
 	color:#000;
+	transition: background-color 0.5s, color 0.5s, border-color 0.5s ease-in-out;
+	-webkit-transition: background-color 0.5s, color 0.5s, border-color 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s, color 0.5s, border-color 0.5s ease-in-out;
 }
 
 
 
 .contain a:hover{
-	background-color: #7e0db8;
+	background-color: #10f5e2;
 	color:#fff;
-	border-color: #141af7;
-	transition: background-color 0.5s, color 0.5s ease-in-out;
-	-webkit-transition: background-color 0.5s, color 0.5s ease-in-out;
-	-moz-transition: background-color 0.5s, color 0.5s ease-in-out;
+	border-color: #10f5e2;
+	
+}
+
+.rights{
+	padding-top:30px;
+	font-family: arial, sans-serif;
+	text-align: center;
+	font-size: 10px;
+	display:none;
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
-  	 #how{
+  	 .how{
 	    	font-size: 30px;
 	    }
 
-	   #find{
-	   	font-size: 30px;
-	   }
+	   
 
 	   #little{
 	   	font-size: 20px;
@@ -383,16 +395,18 @@ html body{
 	   .tutvid a{
 	   	font-size:20px;
 	   }
+
+	   .tut{
+	   	font-size: 20px;
+	   	padding:10px;
+	   }
 }
 
 @media screen and (min-width: 1000px) {
-	  #how{
+	  .how{
 	    	font-size: 60px;
 	    }
 
-	   #find{
-	   	font-size: 60px;
-	   }
 
 	   #little{
 	   	font-size: 40px;
@@ -438,6 +452,11 @@ html body{
 
 	   .tutvid a{
 	   	font-size:30px;
+	   }
+
+	   .tut{
+	   	font-size: 40px;
+	   	padding:15px;
 	   }
 
 }

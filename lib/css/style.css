@@ -74,6 +74,9 @@ html body{
 	
 }
 
+.how{
+	opacity: 0;
+}
 
 #spurspump{
 	background-color: #f4efef;
