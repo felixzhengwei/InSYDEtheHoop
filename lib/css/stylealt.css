@@ -121,9 +121,16 @@ html body{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
-	color: #808080;
+	color: #fff;
+	box-shadow: 5px 5px 2.5px #080808;
+	transition: background-color 0.3s ease-in-out;
+	-webkit-transition: background-color 0.3s ease-in-out;
+	-moz-transition: background-color 0.3s ease-in-out;
 }
 
+#expand:hover{
+	background-color: #808080;
+}
 .vidrow{
 	display:none;
 }
@@ -285,7 +292,7 @@ html body{
 	text-align: center;
 	display:none;
 	vertical-align: middle;
-  	background-image: url("../pics/wball.png");
+  	background-image: url("../pics/ball2.png");
   	background-size: cover;
   	background-position: center center;
 }
@@ -410,7 +417,8 @@ html body{
 
 @media screen and (min-width: 1000px) {
 	  .how{
-	    	font-size: 60px;
+	    	font-size: 70px;
+	    	font-weight:bold;
 	    }
 
 
@@ -418,20 +426,16 @@ html body{
 	   	font-size: 40px;
 	   }
 
-	   #imagequesiton{
-	   	font-size: 60px;
-	   }
-
 	   #know{
 	   	font-size: 30px;
 	   }
 
 	   #imagequestion{
-	   	font-size: 40px;
+	   	font-size: 60px;
 	   }
 
 	   #imagequestion2{
-	   	font-size: 40px;
+	   	font-size: 60px;
 	   }
 
 	   #quiz{
