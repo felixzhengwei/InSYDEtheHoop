@@ -19,6 +19,12 @@ html body{
 	display: table-cell;
 }
 
+#loading{
+	position: absolute;
+	bottom:0;
+	right: 0;
+}
+
 #nbavid{
 	position: absolute;
 	z-index: -1;
